@@ -3,7 +3,11 @@ import React from 'react';
 export const Nextarrow = (props) => {
     return (
     <>
-    <div {...props} />
+    <div 
+    className={props.className}
+    style={{...props.style, backgroundColor:"black"}}
+    onclick={props.onClick}
+     />
     </>
     )
 }
@@ -11,7 +15,11 @@ export const Nextarrow = (props) => {
 export const Prevarrow = (props) => {
     return (
     <>
-    <div {...props} />
+    <div 
+    className={props.className}
+    style={{...props.style}}
+    onclick={props.onClick}
+     />
     </>
     )
 }

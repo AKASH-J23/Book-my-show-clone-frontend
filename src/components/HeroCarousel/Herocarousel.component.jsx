@@ -18,9 +18,7 @@ const Herocarousel = () => {
     }
     const settings = {
         arrows: true,
-        centerMode: true,
-        centerPadding: "2000px",
-        dots: true,
+        autoplay: true,
         infinite: true,
         speed: 500,
         slidesToShow: 1,
@@ -40,7 +38,7 @@ const Herocarousel = () => {
             <Slider {...settings}>
                 {images.map((image)=>(
                     <div className="w-full h-56 md:h-80 py-3">
-                        <img src={image} alt="testing" className="w-full h-full " />
+                        <img src={image} alt="testing" className="w-full h-full"/>
                     </div>
                 ))}
             </Slider>
