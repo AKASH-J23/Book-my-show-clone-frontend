@@ -1,5 +1,5 @@
 const settings = {
-    infinity: false,
+    Infinity: false,
     autoplay: false,
     slidesToShow: 5,
     slidesToScroll: 2,

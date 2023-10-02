@@ -6,17 +6,19 @@ import PosterCarousel from "../../config/PosterCarousel.config"
 const PosterSlider = (props) => {
     return (
         <>
-        <div className='flex flex-col items-start'>
-      <h3 className='text-white text-xl font-bold'>
+        <div className='flex flex-col items-start my-2 mx-3'>
+      <h3 className={`text-2xl font-bold
+      ${props.isDark ? "text-white" : "text-gray-800"}`}>
         {props.title}
       </h3>
-      <p className='text-white'>
+      <p className={`text-sm
+      ${props.isDark ? "text-white" : "text-gray-800"}`}>
         {props.subtitle}
       </p>
     </div>
     <Slider {...PosterCarousel}>
         {props.images.map((sample)=>(
-            <Poster {...sample} isDark/>
+            <Poster {...sample} isDark={props.isDark}/>
         ))}
     </Slider>
         </>

@@ -20,9 +20,23 @@ const HomePage = () => {
                             className="w-full h-full"/>
                         </div>
                     </div>
-                    <PosterSlider images={TempPoster} title="Premieres" subtitle="Brand new movies from friday"/>
+                    <PosterSlider images={TempPoster} title="Premieres" subtitle="Brand new movies from friday" isDark/>
                 </div>
             </div>
+        </div>
+        <div className="container mx-auto px-4 my-8">
+            <PosterSlider 
+            images={TempPoster}
+            title="Online Streaming Events"
+            isDark={false}
+            />
+        </div>
+        <div className="container mx-auto px-4 my-8">
+            <PosterSlider 
+            images={TempPoster}
+            title="Outdoor Events"
+            isDark={false}
+            />
         </div>
         </>
     )
